@@ -1,5 +1,8 @@
 <?php
     header("Content-Type:text/plain");
-    $sum =  $_GET[arg1]+$_GET[arg2];
-    echo $sum;
+    require_once( 'include/common.inc.php' );
+    
+    $arg1 = GetParamFromGet( 'arg1', 0 );
+    $arg2 = GetParamFromGet( 'arg2', 0 );
+    echo Sum( $arg1, $arg2 );
                       

@@ -1,0 +1,10 @@
+Ключ	Значение
+Запрос	GET /print_hello.php HTTP/1.1
+Accept	text/html, application/xhtml+xml, */*
+Referer	http://127.0.0.1:4001/
+Accept-Language	ru-RU
+User-Agent	Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)
+Accept-Encoding	gzip, deflate
+Host	127.0.0.1:4001
+DNT	1
+Connection	Keep-Alive
