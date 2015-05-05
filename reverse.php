@@ -1,16 +1,11 @@
 <?php
-    require_once( 'include/common.inc.php' );
-    if ( function_exists( 'GetParamFromGet' ) )
+    require_once( 'include/common.inc.php' );    
+    
+    $stroka = GetParamFromGet( 'str', '' );
+    
+    if ( $stroka !== '' )
     {
-        $stroka = GetParamFromGet( 'str', '' );
+         $stroka = Revers( $stroka );
+         echo $stroka;
     }
-    else
-    {
-        $stroka = '';
-    }
-
-    if ( function_exists( 'Revers' ) )
-    {
-        $stroka = Revers( $stroka );
-    }
-    echo $stroka;
+    

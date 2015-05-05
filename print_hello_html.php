@@ -3,4 +3,5 @@
 
     // отличие заголовков ответа сервера для программы 
     // PrintHelloHTML от PrintHello:
-    // content-Type: text/html  и text/plain 
+    // 1. Content-Type: text/html и text/plain 
+    // 2. Content-Length: 12 и 28

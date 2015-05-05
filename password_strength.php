@@ -1,57 +1,53 @@
 <?php
-    header("Content-Typ(text/plain");
+    header("Content-Type:text/plain");
     require_once( 'include/common.inc.php' );
 
-    if ( function_exists( 'GetParamFromGet' ) )
+   
+    $passwordStr = GetParamFromGet( 'password', '' );
+            
+    if ( $passwordStr == '' )
     {
-        $passwordStr = GetParamFromGet( 'password', '' );        
+        exit;
     }
-    else
-    {
-        $passwordStr = '';
-    }                   
-  
-    $strength = 0; 
-    $strength += 4 * ( strlen ( $passwordStr ) );
+   
+    $strength = 0;
 
-    $numbers = preg_replace( "/[^0-9]/", '', $passwordStr );
-    $strength += 4 * ( strlen ( $numbers ) );
+    $typeValue = array
+    ( "password" => "/[^0-9-a-zA-Z]/",
+      "number"   => "/[^0-9]/",
+      "strHigh"  => "/[^A-Z]/",
+      "strSmall" => "/[^a-z]/"
+    );
 
-    $str = preg_replace("/[^A-Z]/", '', $passwordStr );
-    if ( strlen( $str ) > 0 )
-    {
-        $strength += ( ( strlen( $passwordStr ) - strlen( $str ) ) ) * 2;
+    $countArray = array();
+    
+    foreach ( $typeValue as $i => $value )
+    {          
+        $countArray[$i] = StrengthPassword ( $value, $passwordStr ); 
+
+        if ( ( $value == $typeValue["password"] ) || ( $value == $typeValue["number"] ) )
+        {
+            $strength += 4 * $countArray[$i];
+        }
+
+        if ( ( ( $value == $typeValue["strHigh"] ) || ( $value == $typeValue["strSmall"] ) ) && ( $countArray[$i] > 0 ) )
+        {
+            $strength += ( $countArray["password"] - $countArray[$i] ) * 2;     
+        }
     }
-
-    $str = preg_replace( "/[^a-z]/", '', $passwordStr );
-    if ( strlen( $str ) > 0 )
+     
+    if ( ( $countArray["password"] == ( $countArray["strHigh"] + $countArray["strSmall"] ) ) || ( $countArray["password"] == $countArray["number"] ) )
     {
-        $strength += ( ( strlen( $passwordStr ) - strlen( $str ) ) ) * 2;
+        $strength -= $countArray["password"];  
     }
-
-    $str = preg_replace( "/[^a-zA-Z]/", '', $passwordStr );
-    if ( strlen( $str ) == strlen( $passwordStr ) )
-    {
-        $strength -= strlen( $passwordStr );
-    }
-
-    $numbers = preg_replace( "/[^0-9]/", '', $passwordStr );
-    if ( strlen( $numbers ) == strlen( $passwordStr ) )
-    {
-        $strength -= strlen( $passwordStr );
-    }
-
+                          
     foreach ( count_chars( $passwordStr, 1 ) as $i => $val )
     {
         if ( $val > 1 )
         {
             $strength -=  $val;
         }
-    }
-   
-   echo $strength;
-                            
-                                                             
+    }                     
 
- 
-           
+    echo $strength ; 
+                                                                       

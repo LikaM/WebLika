@@ -1,16 +1,12 @@
 <?php
     require_once( 'include/common.inc.php' );
-    if ( function_exists( 'GetParamFromGet' ) )
-    {
-        $stroka = GetParamFromGet( 'str', '' );
-    }
-    else
-    {
-        $stroka = '';
-    }
-
-    if ( function_exists( 'WithoutLast' ) )
+    
+    $stroka = GetParamFromGet( 'str', '' );
+    
+    if ( $stroka !== '' )
     {
         $stroka = WithoutLast( $stroka );
+        echo $stroka;
     }
-    echo $stroka;
+
+    

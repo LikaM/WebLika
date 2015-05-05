@@ -1,17 +1,12 @@
 <?php
     header("Content-Type:text/plain"); 
     require_once( 'include/common.inc.php' );
-    if ( function_exists( 'GetParamFromGet' ) )
-    {
-        $stroka = GetParamFromGet( 'str', '' );
-    }
-    else
-    {
-        $stroka = '';
-    }
+   
+    $stroka = GetParamFromGet( 'str', '' );
                                  
-    if ( ( function_exists( 'ExtraBlank' ) ) && ( $stroka == TRUE ) )
+    if ( $stroka == TRUE )
     {
         $stroka = ExtraBlank( $stroka );
+        echo $stroka;
     }
-    echo $stroka;
+    

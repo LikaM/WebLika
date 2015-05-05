@@ -1,32 +1,29 @@
 <?php
-    header("Content-Typ(text/plain");
+    header("Content-Type:text/plain");
     require_once( 'include/common.inc.php' );
-    if ( function_exists( 'GetParamFromGet' ) )
-    {
-        $firstName = GetParamFromGet( 'first_name', '' );
-        $lastName  = GetParamFromGet( 'last_name', '' );
-        $emailName = GetParamFromGet( 'email', '' );
-        $age       = GetParamFromGet( 'age', '' );
-    }
-    else
-    {
-        $emailName = '';
-    }                   
-  
-    $dirName = $_SERVER['DOCUMENT_ROOT'] . "/data"; 
-                            
-    if ( $emailName == '')
+
+    $arrayData = array();
+    $arrayData =  SetSurveyFile();
+                           
+    if ( $arrayData['email'] == '')
     {
         exit();
-    }    
- 
-    $fileName = $dirName . "/" . $emailName . ".txt";  
-                                                       
-    $fp = fopen( $fileName, 'w');
-    SetFileWrite( $fp, "First Name: " . $firstName . "\n" );
-    SetFileWrite( $fp, "Last Name:  " . $lastName . "\n" );
-    SetFileWrite( $fp, "Email:      " . $emailName . "\n" );
-    SetFileWrite( $fp, "Age:        " . $age . "\n" );
-    fclose( $fp );
+    }
+    
+    $fileName = SetFileName( $dirName = "data", $arrayData['email'] );     
+   
+    if ( $fileName )
+    {
+        $fp = fopen( $fileName, 'w');
+        if ( $fp )                                                  
+        {
+            fwrite( $fp, "First Name: " . $arrayData['first_name'] . "\n" );
+            fwrite( $fp, "Last Name:  " . $arrayData['last_name'] . "\n" );
+            fwrite( $fp, "Email:      " . $arrayData['email'] . "\n" );
+            fwrite( $fp, "Age:        " . $arrayData['age'] . "\n" );
+            fclose( $fp );                  
+        }
+    }
 
  
+       
