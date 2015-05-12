@@ -9,13 +9,13 @@
         exit();
     }
 
-    $fileName = GetFileName( $dirName = "data", $emailName );    
-    if ( $fileName )
+    $path = GetSurveyFilePath( $emailName );   
+    if ( file_exists( $path ) )                                             
     {   
-        $fh = fopen( $fileName, "r" );
+        $fh = fopen( $path, "r" );
         if ( $fh )                                                  
         {   
-            $array = file_get_contents( $fileName );
+            $array = file_get_contents( $path );
             echo $array;
                 
             fclose( $fh );

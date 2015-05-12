@@ -1,43 +1,36 @@
 <?php
-
-    function SetSurveyFile()
+                 
+    function GetSurveyFromRequest()
     {     
-        $arraySurvey = array();         
-        $arraySurvey['first_name']  = GetParamFromGet( 'first_name', '' );
-        $arraySurvey['last_name']   = GetParamFromGet( 'last_name', '' );
-        $arraySurvey['email']       = GetParamFromGet( 'email', '' );
-        $arraySurvey['age']         = GetParamFromGet( 'age', '' );
-
-        return $arraySurvey;
+        $info = array
+        (         
+            'first_name' => GetParamFromGet( 'first_name', '' ),
+            'last_name'  => GetParamFromGet( 'last_name', '' ),
+            'email'      => GetParamFromGet( 'email', '' ),
+            'age'        => GetParamFromGet( 'age', '' )
+        );  
+        return $info;
     }
 
 
-    function GetFileName( $dirName, $fileName )
+    function GetSurveyFilePath( $email )
     {               
-        $path = '.' . "/" . $dirName;
-        $path = $path . "/" . $fileName . ".txt";   
-     
-        if ( ( !file_exists( $path ) ) || ( !is_readable( $path ) ) )
-        {
-            $path = '';
-        }   
-         
-        return $path;
+        $path = '.' . "/data/" . $email . ".txt";        
+        return $path ;
     }
 
-    function SetFileName( $dirName, $fileName )
+    function SaveSurveyToFile( $survey )
     {            
-        $path = '.' . "/" . $dirName;       
-        
-        if ( !file_exists( $path ) )
+        $path = GetSurveyFilePath( $survey['email'] ); 
+ 
+        $fp = fopen( $path, 'w');
+        if ( $fp )                                                  
         {
-            if ( !is_dir( $path ) )
-            {  
-                mkdir ( $path, 0755, true );
-            }
-        }
-  
-        $path .= "/" . $fileName . ".txt"; 
-    
-        return $path;
+            fwrite( $fp, "First Name: " . $survey['first_name'] . "\n" );
+            fwrite( $fp, "Last Name:  " . $survey['last_name'] . "\n" );
+            fwrite( $fp, "Email:      " . $survey['email'] . "\n" );
+            fwrite( $fp, "Age:        " . $survey['age'] . "\n" );
+            fclose( $fp );                  
+        }    
+        return;
     }                                                               

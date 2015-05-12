@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     require_once( 'request.inc.php' );
     require_once( 'string.inc.php' );
     require_once( 'math.inc.php' );
