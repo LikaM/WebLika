@@ -5,5 +5,4 @@
     (
         'headline' => 'Survey'  
     );
-    buildLayout('survey_form.html', $vars);
-                             
+    BuildLayout('survey_form.html', $vars);

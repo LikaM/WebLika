@@ -6,9 +6,10 @@
   </head>           
   <body>
     <h1>{$headline}</h1>
-    <form>  
+    <form action="survey_form.php" method="post"
+      enctype="application/x-www-urlencoded">   
       <label>First Name</label><br/>    
-      <input type="tex"' name="first_name"/><br/>
+      <input type="text" name="first_name"/><br/>
       
       <label>Last Name</label><br/>
       <input type="text" name="last_name"/><br/>

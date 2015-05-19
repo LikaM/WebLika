@@ -1,0 +1,32 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+h2
+{
+    border-bottom: 1px solid #000099;
+    color: #2f363a;
+    margin-bottom: 35px;
+    margin-left: 10px;
+}
+
+table
+{     
+    margin-left: 10px; 
+    margin-bottom: 20px;    
+    border-collapse: collapse;   
+}
+
+td,
+th
+{
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 1px solid black; /* Параметры рамки */
+}
+   
+.red
+{
+    border-bottom: 1px solid #ff0000;
+}

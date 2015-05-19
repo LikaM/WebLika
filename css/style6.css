@@ -1,0 +1,70 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1
+{
+    border-bottom: 1px solid #000099;
+    color: #2f363a;
+    margin-bottom: 35px;  
+
+}
+
+div
+{
+    background-color: white;
+    color: black;
+    width: 160px;
+    height: 150px;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    background-position: left bottom;     
+}
+
+.text_button
+{
+    position: relative;
+    left: 90px;
+    top: 18px;     
+}
+
+.in_texture1
+{     
+    background-image: url("../images/texture1.jpg");  
+}
+
+.in_texture2
+{     
+    background-image: url("../images/texture2.jpg");  
+}
+
+.in_texture3
+{     
+    background-image: url("../images/texture3.jpg");  
+}
+
+.button_cat
+{ 
+    margin: 0; 
+    margin-top: 40px;
+    width: 297px;
+    height: 55px;
+    background-image: url("../images/button.png"); 
+    border: 0px;
+    padding: 0;   
+}
+
+.status_button
+{
+    font-family: Verdana;
+    text-decoration: none;
+}
+
+.status_button:hover
+{
+    background-image: url("../images/button-over.png");
+}

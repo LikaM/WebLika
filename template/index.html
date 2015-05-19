@@ -5,23 +5,13 @@
     <title>Layout</title>
   </head>
   <body>    
-    <div style="width: 800px; height: 800px; position: relative; background-color: white; margin: 0 auto; border: 1px solid gray;">    
-      <div style="width: 800px; height: 100px; background-color: darkcyan; ">
-      <h1> Header </h1>      
-      </div>                     
-                                                                       
-      <div style="width: 200px; height: 500px; background-color: coral; float: left;">
-      Sidebar
-      </div>   
-    
-      <div style="width: 600px; height: 640px; background-color: gray; float: right;">
-      Content
-      </div>
-
-      <div style="width: 800px; height: 60px; background-color: lightsalmon; clear: both;">
-      <h6> Footer </h6>
-      </div>       
-    </div>        
+    <div style="width: 800px; height: 800px; position: relative; background-color: #ffffff;
+      margin-botton: 5px; margin-left: 5px; margin-right: 5; margin-top: 0;
+      padding-top: 0; border: 1px solid #000000;">    
+      {include file='header.html'}       
+      {include file='sidebar.html'}
+      {include file='content.html'}
+      {include file='footer.html'}
+    </div>            
   </body>
-</html>                            
-                                   
+</html>                        
