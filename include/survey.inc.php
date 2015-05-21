@@ -31,6 +31,5 @@
             fwrite( $fp, "Email:      " . $survey['email'] . "\n" );
             fwrite( $fp, "Age:        " . $survey['age'] . "\n" );
             fclose( $fp );                  
-        }    
-        return;
-    }                                                               
+        }       
+    }                                          

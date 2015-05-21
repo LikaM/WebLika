@@ -25,6 +25,6 @@
             'sines' => $sine
         );                                                                     
                                      
-        BuildLayout('sine_table.html', $vars);
+        BuildLayout('sin_table.html', $vars);
     }                                                  
                                  

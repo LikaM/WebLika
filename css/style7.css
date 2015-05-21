@@ -1,0 +1,55 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+div
+{
+    width: 350px;
+    height: 55px;
+    padding-top: 10px;
+   
+}
+
+span
+{
+    width: 330px;
+    color: #AEAEAE;
+    padding: 10px;     
+    position: absolute; left: 30px;    
+}
+
+img
+{
+    padding-top: 10px;  
+    margin-left: 10px;
+       
+}
+   
+.layer_header 
+{
+    font: 18pt Arial;
+    font-weight: 700;         
+    color: black;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 15px;
+}
+ 
+  .layer_text 
+ {
+    font: 12pt Arial;
+    
+ } 
+ 
+ .line
+ {
+     border-bottom: 6px solid black;
+     width: 340px; 
+     position: absolute; left: 10px;    
+}
+
+
+     
+ }
