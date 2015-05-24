@@ -8,11 +8,17 @@ h1
 {
     border-bottom: 1px solid #000099;
     color: #2f363a;
-    margin-bottom: 35px;  
-
+    margin-bottom: 35px;
+    font-family: Arial;
 }
 
-div
+span
+{ 
+    font-family: Arial;
+    font-size: 10px;   
+}
+
+.texture
 {
     background-color: white;
     color: black;
@@ -22,7 +28,8 @@ div
     padding-bottom: 40px;
     margin-bottom: 20px;
     border: 1px solid grey;
-    background-position: left bottom;     
+    background-position: left bottom;  
+    text-align: center;    
 }
 
 .text_button
@@ -49,13 +56,11 @@ div
 
 .button_cat
 { 
-    margin: 0; 
-    margin-top: 40px;
+    margin-top: 20px;
     width: 297px;
     height: 55px;
     background-image: url("../images/button.png"); 
-    border: 0px;
-    padding: 0;   
+    border: 0px;   
 }
 
 .status_button

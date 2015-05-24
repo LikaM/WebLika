@@ -8,23 +8,19 @@
     <h1>{$headline}</h1> 
       <table border=1>
         <thead>
-          <tr valign="top" align="center">
-            {foreach from=$columns key=num item=columninfo}
-              <th><font color="black">{$columninfo.columnname}</font></th>
-            {/foreach}
-            <th>&nbsp;</th>
-          </tr>
+          
         </thead>
         <tbody>
-          {foreach from=$sines key=num item=sine}
+          {foreach from=$sins item=sin}
             <tr>
-              <td><font color="black">{$sine.degree}</font></td>
-              <td><font color="black">{$sine.minute}</font></td>
-              <td><font color="black">{$sine.sin}</font></td>
+ <td><font color="black">{$sin.degree}</font></td>
+              <td><font color="black">{$sin.minute}</font></td>
+              <td><font color="black">{$sin.sin}</font></td>
+             
             </tr>
           {/foreach}
         </tbody>                                          
       </table>                 
   </body>            
-</html>                            
+</html>                                                        
     

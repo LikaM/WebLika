@@ -1,0 +1,71 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+html, body
+{
+    height: 100%;
+}
+
+body, div, a, p, ul, ol, li, table, td, th,
+{
+    font-family: Tahoma;
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: Arial;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.left
+{
+    float: left;
+}
+
+.right
+{
+    float: right;
+}
+
+.red
+{
+    background-color: #ff0000;
+}
+
+.square
+{
+    width: 40px;
+    height: 40px;
+}
+
+.square2
+{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    height: 60px;
+    width: 60px;
+    margin: 20% 0 0 20%;
+    background-color: #00cc00;
+}
+
+.pos
+{
+    position: absolute;
+    top: 85.5%;
+ }
+ 
+ .pos1
+{
+    left: 85.5%;  
+}

@@ -1,0 +1,21 @@
+.main
+{
+    width: 480px;
+    min-height: 100%;
+    margin: 0 200px 0 220px;
+    border: 1px solid gray;
+    border-top: none;
+    border-bottom: none;    
+}
+
+/* Here custom styles begin */
+
+/* Here custom styles end */
+.main10
+{
+    width: 275px;
+    height: 275px;    
+    margin: 20px 150px 0 380px;    
+    background-color: #0099cc;
+    position: relative;    
+}

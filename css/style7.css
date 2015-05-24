@@ -4,27 +4,44 @@
     padding: 0;
 }
 
+.clear
+{
+    clear: both;
+}
+
+html, body
+{
+    height: 50%;
+}
+
+.main
+{
+    width: 330;
+
+    min-height: 100%;
+    
+    border: none;
+    
+}
+
 div
 {
-    width: 350px;
-    height: 55px;
+     
     padding-top: 10px;
    
 }
-
+     
 span
 {
-    width: 330px;
-    color: #AEAEAE;
-    padding: 10px;     
-    position: absolute; left: 30px;    
+  
+    color: #AEAEAE;      
+    position: absolute; 
+    left: 40px;    
 }
 
 img
 {
-    padding-top: 10px;  
-    margin-left: 10px;
-       
+    margin-left: 10px;       
 }
    
 .layer_header 
@@ -32,15 +49,13 @@ img
     font: 18pt Arial;
     font-weight: 700;         
     color: black;
-    padding-top: 0px;
-    margin-top: 0px;
     margin-left: 15px;
 }
  
   .layer_text 
  {
-    font: 12pt Arial;
-    
+    font: 12pt Arial;  
+    height: 55px;    
  } 
  
  .line
@@ -52,4 +67,4 @@ img
 
 
      
- }
+ 

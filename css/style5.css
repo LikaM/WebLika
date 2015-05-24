@@ -10,6 +10,7 @@ h2
     color: #2f363a;
     margin-bottom: 35px;
     margin-left: 10px;
+    font-family: Arial;
 }
 
 table
@@ -28,5 +29,5 @@ th
    
 .red
 {
-    border-bottom: 1px solid #ff0000;
+    border-color: #ff0000;
 }
