@@ -6,21 +6,19 @@
   </head>           
   <body>
     <h1>{$headline}</h1> 
-      <table border=1>
-        <thead>
-          
-        </thead>
-        <tbody>
-          {foreach from=$sins item=sin}
-            <tr>
- <td><font color="black">{$sin.degree}</font></td>
+      <table border=1> 
+ <tbody> 
+          {foreach from=$sins key=num item=sin}
+           <tr>
+
+            
+            <td><font color="black">{$sin.degree}</font></td>
               <td><font color="black">{$sin.minute}</font></td>
               <td><font color="black">{$sin.sin}</font></td>
-             
-            </tr>
+             </tr>        
           {/foreach}
-        </tbody>                                          
-      </table>                 
+           </tbody>                                       
+       </table>            
   </body>            
 </html>                                                        
-    
+                                        

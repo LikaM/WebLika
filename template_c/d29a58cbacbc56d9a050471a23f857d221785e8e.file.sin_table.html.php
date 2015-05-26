@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-05-23 13:03:52
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-05-25 20:20:49
          compiled from "E:\server2go\htdocs\template\sin_table.html" */ ?>
 <?php /*%%SmartyHeaderCode:1258555e1154eaf645-05810570%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd29a58cbacbc56d9a050471a23f857d221785e8e' => 
     array (
       0 => 'E:\\server2go\\htdocs\\template\\sin_table.html',
-      1 => 1432379027,
+      1 => 1432578036,
       2 => 'file',
     ),
   ),
@@ -34,28 +34,28 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   <body>
     <h1><?php echo $_smarty_tpl->tpl_vars['headline']->value;?>
 </h1> 
-      <table border=1>
-        <thead>
-          
-        </thead>
-        <tbody>
+      <table border=1> 
+ <tbody> 
           <?php  $_smarty_tpl->tpl_vars['sin'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['sin']->_loop = false;
+ $_smarty_tpl->tpl_vars['num'] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['sins']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['sin']->key => $_smarty_tpl->tpl_vars['sin']->value) {
 $_smarty_tpl->tpl_vars['sin']->_loop = true;
+ $_smarty_tpl->tpl_vars['num']->value = $_smarty_tpl->tpl_vars['sin']->key;
 ?>
-            <tr>
- <td><font color="black"><?php echo $_smarty_tpl->tpl_vars['sin']->value['degree'];?>
+           <tr>
+
+            
+            <td><font color="black"><?php echo $_smarty_tpl->tpl_vars['sin']->value['degree'];?>
 </font></td>
               <td><font color="black"><?php echo $_smarty_tpl->tpl_vars['sin']->value['minute'];?>
 </font></td>
               <td><font color="black"><?php echo $_smarty_tpl->tpl_vars['sin']->value['sin'];?>
 </font></td>
-             
-            </tr>
+             </tr>        
           <?php } ?>
-        </tbody>                                          
-      </table>                 
+           </tbody>                                       
+       </table>            
   </body>            
 </html>                                                        
-    <?php }} ?>
+                                        <?php }} ?>

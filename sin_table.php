@@ -18,32 +18,33 @@
         $step = ( ($degree + $minute / 60) * $pi / 180 );
         for ( $i = 0; $i <= 2*($pi); $i += $step )
         { 
-            $[deg[$i] =  floor($i * 180 / $pi);
-            $min =  ( ($i * 180 / $pi) - (floor($i * 180 / $pi)) ) * 60;
-            $sin = round(sin($i),4);
-
-$arr = array("somearray" => array(6 => 5, 13 => 9, "a" => 42));
-
-        $arr = array( array('Вася', 'слесарь', 2500 ), 
-            array('Миша','строитель', 3000), 
-            array('Андрей', 'шофер', 2700)); 
- $table_sin = array
-        (         
-           array 'deg' => GetParamFromGet( 'first_name', '' ),
-            'min' => GetParamFromGet( 'last_name', '' ),
-            'sin' => GetParamFromGet( 'age', '' )
-        );
-
-echo $sin . "   \n";                                                           
+            $deg[$i] = floor($i * 180 / $pi);
+            $min[$i] = ( ($i * 180 / $pi) - (floor($i * 180 / $pi)) ) * 60;
+            $sin[$i] = round(sin($i),4);
+       
+ $tableSin = array
+            (               
+                
+                    'degree' =>	$deg[$i],
+                    'minute' => $min[$i],
+                    'sin'    => $sin[$i]
+              );
+ 
+                             
+                          
+//        
+  //print_r ( $tableSin);                                                        
         }
+       
      
+//print_r ( $tableSin);
         $vars = array               
-        (                     
+        (                       
             'headline' => 'Sin table',     
-            'sins' => $sin
+            'sins'     => $tableSin
         );                                                                     
             
                        
         BuildLayout('sin_table.html', $vars);
-    }                                                  
+    }                                                     
                                  
