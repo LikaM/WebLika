@@ -9,6 +9,7 @@
 html, body
 {
     height: 100%;
+    width: 100%;
 }
 
 body, div, a, p, ul, ol, li, table, td, th,
@@ -27,16 +28,6 @@ h1, h2, h3, h4, h5, h6
     clear: both;
 }
 
-.left
-{
-    float: left;
-}
-
-.right
-{
-    float: right;
-}
-
 .red
 {
     background-color: #ff0000;
@@ -44,8 +35,8 @@ h1, h2, h3, h4, h5, h6
 
 .square
 {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
 }
 
 .square2
@@ -53,19 +44,33 @@ h1, h2, h3, h4, h5, h6
     position: absolute;
     top: 20%;
     left: 20%;
-    height: 60px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
     margin: 20% 0 0 20%;
     background-color: #00cc00;
 }
 
-.pos
+.pos 
 {
     position: absolute;
-    top: 85.5%;
+}
+
+.pos1
+{    
+    top: 0;
  }
  
- .pos1
+ .pos2
 {
-    left: 85.5%;  
+    right: 0;
+ }
+
+ .pos3
+{    
+    top: 86%;
+ }
+ 
+ .pos4
+{
+    left: 86%;     
 }

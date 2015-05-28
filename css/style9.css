@@ -8,7 +8,7 @@
 
 html, body
 {
-    height: 100%;
+    height: 100%;   
 }
 
 body, div, a, p, ul, ol, li, table, td, th,
@@ -49,102 +49,103 @@ h1, h2, h3, h4, h5, h6
 
 .indent1
 {
-     margin: 10px;
+     margin: 20px;
 }
 
 .indent2
 {
-     margin: 0 10px;
+     margin: 0 20px;
 }
 
 .layer1
 {
-    width: 340px;
-    height: 25px;
+    width: 700px;
+    height: 50px;
     background-color: #00ffff;       
 }
 
 .layer2
 {
-    width: 435px;
-    height: 15px;
+    width: 900px;
+    height: 30px;
     background-color: #33ccff;    
 }
 
 .layer3
 {
-    width: 260px;
-    height: 162px;
+    width: 540px;
+    height: 340px;
     background-color: #3399ff;   
 }
 
 .layer4
 {
-    width: 190px;
-    height: 145px;
+    width: 400px;
+    height: 300px;
     background-color: #6699ff;   
 }
 
 .layer3_1_1
 {
-    width: 100px;
-    height: 20px;
+    width: 200px;
+    height: 40px;
     background-color: #9999ff;    
 }
 
 .layer3_1_2
 {
-    width: 120px;
-    height: 30px;
+    width: 250px;
+    height: 70px;
     background-color: #cc66ff;   
 }
 
 .layer3_2
 {
-    width: 240px;
-    height: 25px;
+    width: 500px;
+    height: 50px;
     background-color: #ff6666;   
 }
 
 .layer3_3_1
 {
-    width: 50px;
-    height: 35px;
+    width: 100px;
+    height: 70px;
     background-color: #660033;       
 }
  
 .layer3_3_2
 {
-    width: 40px;
-    height: 35px;
+    width: 90px;
+    height: 70px;
     background-color: #000066;
-    margin-top: 10px;    
+    margin-top: 20px;    
 }
 
 .layer3_3_3
 {
-    width: 45px;
-    height: 35px;
+    width: 90px;
+    height: 70px;
     background-color: #999966;      
 }
 
 .layer4_1_1
 {
-    width: 38px;
-    height: 30px;
+    width: 80px;
+    height: 60px;
     background-color: #ff00ff;      
 }
 
 .layer4_1_2
 {
-    width: 35px;
-    height: 30px;
+    width: 70px;
+    height: 60px;
     background-color: #0033cc;   
-    margin: 0 5px 0 0;    
+    margin: 0 10px 10px 0;    
 }
 .layer4_3
 {
-    width: 190px;
-    height: 25px;
-    background-color: #6600cc;    
+    width: 400px;
+    height: 50px;
+    background-color: #6600cc;  
+    margin-top: 10px;    
  }

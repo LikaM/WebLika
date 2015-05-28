@@ -6,16 +6,18 @@
 
 h1
 {
-    border-bottom: 1px solid #000099;
+    border-bottom: 2px solid #2279da;
     color: #2f363a;
     margin-bottom: 35px;
-    font-family: Arial;
+    font-family: Tahoma;
+    font-weight: 500;
 }
 
 span
 { 
-    font-family: Arial;
-    font-size: 10px;   
+    font-family: Tahoma;
+    font-size: 14px;   
+    font-weight: 700;
 }
 
 .texture
@@ -28,15 +30,14 @@ span
     padding-bottom: 40px;
     margin-bottom: 20px;
     border: 1px solid grey;
-    background-position: left bottom;  
     text-align: center;    
 }
 
 .text_button
 {
-    position: relative;
-    left: 90px;
-    top: 18px;     
+    font-family: Tahoma;
+    font-size: 16px; 
+    font-weight: 700;     
 }
 
 .in_texture1
@@ -53,23 +54,21 @@ span
 {     
     background-image: url("../images/texture3.jpg");  
 }
-
-.button_cat
-{ 
-    margin-top: 20px;
-    width: 297px;
-    height: 55px;
-    background-image: url("../images/button.png"); 
-    border: 0px;   
-}
-
+  
 .status_button
 {
+    margin-top: 20px;
+    width: 297px;
+    height: 40px; 
+    background-image: url("../images/button.png"); 
+    border: 0px;   
+    text-align: center; 
     font-family: Verdana;
     text-decoration: none;
+    padding-top: 15px;
 }
 
 .status_button:hover
 {
-    background-image: url("../images/button-over.png");
+    background-image: url("../images/button-over.png");    
 }
