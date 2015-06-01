@@ -2,7 +2,7 @@
 {
     width: 1000px;
     min-height: 100%;
-    margin: 0 440px 0 460px;
+    margin: 0 auto;
     border: 1px solid gray;
     border-top: none;
     border-bottom: none;    
@@ -18,4 +18,11 @@
     margin: 160px 720px 0 700px;    
     background-color: #0099cc;
     position: relative;    
+}
+
+.main11
+{
+    width: 800px;
+    height: 400px;
+    margin: 0 115px;    
 }
