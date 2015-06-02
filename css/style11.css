@@ -15,16 +15,16 @@ h1
     text-align: center;  
 }
 
-span
+.clear
+{
+    clear: both;
+}
+
+p
 { 
     font-family: Tahoma;
     font-size: 14px;   
     font-weight: 700;      
-}
-
-.texture0
-{    
-    height: 220px;     
 }
 
 .texture
