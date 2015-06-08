@@ -14,15 +14,23 @@
 .main10
 {
     width: 500px;
-    height: 500px;    
-    margin: 160px 720px 0 700px;    
+    height: 500px;        
     background-color: #0099cc;
-    position: relative;    
+    position: absolute;
+    top: 50%;
+    left: 50%;    
+    margin-left: -250px; /* Отступ слева */
+    margin-top: -250px;	/* Отступ       
+    padding: 10px; /* Поля вокруг текста */
+    overflow: auto;
 }
 
 .main11
 {
     width: 800px;
-    height: 400px;
-    margin: 0 115px;    
-}
+    height: 400px;   
+    position: absolute;    
+    left: 50%;    
+    margin-left: -400px; /* Отступ слева */
+    overflow: auto;
+}    

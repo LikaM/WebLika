@@ -26,51 +26,48 @@ h1, h2, h3, h4, h5, h6
 .clear
 {
     clear: both;
-}
-
-.red
-{
-    background-color: #ff0000;
-}
+}   
 
 .square
 {
     width: 70px;
     height: 70px;
+    background-color: #ff0000;
+    position: absolute;
 }
 
-.square2
+.square_centre
 {
     position: absolute;
-    top: 20%;
-    left: 20%;
+    top: 50%;
+    left: 50%;
     height: 100px;
     width: 100px;
-    margin: 20% 0 0 20%;
     background-color: #00cc00;
+    margin-left: -50px; /* Отступ слева */
+    margin-top: -50px;	/* Отступ       
+    padding: 10px; /* Поля вокруг текста */
+    overflow: auto; /* Добавление полосы прокрутки */    
 }
 
-.pos 
-{
-    position: absolute;
-}
-
-.pos1
+.square_pos_top_left
 {    
     top: 0;
- }
+}
  
- .pos2
+ .square_pos_top_right
 {
     right: 0;
- }
+}
 
- .pos3
+ .square_pos_bottom_left
 {    
-    top: 86%;
- }
+    bottom: 0%;
+    left: 0%;
+}
  
- .pos4
+ .square_pos_bottom_right
 {
-    left: 86%;     
+    bottom: 0%;
+    right: 0%;     
 }

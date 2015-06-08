@@ -3,7 +3,7 @@
 
     $vars = array
     (
-        'headline' => 'Template Engine',
+        'headline' => 'Authorization',
         
     );
 

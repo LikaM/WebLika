@@ -1,0 +1,105 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1
+{
+    border-bottom: 4px solid #2279da;
+    color: #2f363a;
+    margin: 10px 0 35px;
+    font-family: Arial;
+    font-size: 34px;    
+    font-weight: 500;    
+    text-align: center;  
+}
+
+.clear
+{
+    clear: both;
+}
+
+p
+{ 
+    font-family: Tahoma;
+    font-size: 14px;   
+    font-weight: 700;      
+}
+
+.texture
+{
+    background-color: white;
+    color: black;
+    width: 220px;
+    height: 200px;
+    text-align: center; 
+    border: 1px solid grey;
+    padding-top: 20px;
+    margin-left: 35px;  
+    border-radius: 6px;
+    float: left;   
+    max-width: 100%;
+    background-image: url("../images/texture_sprite.jpg");  
+}
+
+.in_texture1
+{  
+       
+}
+
+.in_texture2
+{     
+    background-position: 0 225px;    
+}
+
+.in_texture3
+{     
+    background-position: 0 455px;
+    position: relative;    
+    margin-left: 35px;    
+}
+
+.atop
+{
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    width: 50px;
+    height: 40px;
+    border: 1px solid #ffd700;
+    background-color: #bc8f8f;
+    border-radius: 8px;
+    padding-top: 5px;
+}
+
+.white
+{
+    color: white;   
+}
+
+.text_button
+{
+    font-family: Tahoma;
+    font-size: 16px; 
+    font-weight: 700;     
+}
+  
+.button
+{
+    margin: 25px 200px 0 250px;
+    width: 299px;
+    height: 38px; 
+    background-image: url("../images/button_sprite.png");    
+    border: 0px;
+    text-align: center; 
+    font-family: Verdana;
+    text-decoration: none;
+    padding-top: 15px;   
+}
+
+.button:hover
+{
+    background-position: 0 -54px;        
+}
+
