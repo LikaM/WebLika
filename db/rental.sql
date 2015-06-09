@@ -85,7 +85,7 @@ SELECT title FROM dvd
 
 
 6.
-SELECT c.first_name, d.title FROM customer 
+SELECT c.first_name, d.title FROM customer c
   JOIN offer o ON (o.customer_id=c.customer_id)
   JOIN dvd d ON (d.dvd_id=o.dvd_id)
   WHERE
